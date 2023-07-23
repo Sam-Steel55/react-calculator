@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+body {
+  background-color: whitesmoke;
+  display: grid;
+  place-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.container {
+   height: 80vh;
+   width: 54vh;
+   background-color: black;
+   border-radius: 1rem;
+   padding: 1rem;
+   box-shadow: 10px 8px 31px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 8px 31px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 8px 31px -10px rgba(0,0,0,0.75);
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr); /* create 4 columns with equal width */
+  grid-template-rows: repeat(6, 1fr); /* create 6 rows with equal height */
+  gap: 10px;
+}
+
+.screen {
+  grid-column: 1 / -1; /* makes the element span from the first column to the last */
+  color: white;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+  border: 1px solid grey; 
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: rgb(54, 52, 52);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+.light-grey {
+  background-color: grey;
+  color: black;
+}
+
+.light-grey:hover {
+  background-color: white;
+}
+
+.orange {
+  background-color: tomato;
+}
+
+.orange:hover {
+  background-color: white;
+  color: tomato;
+}
+
+.zero {
+  grid-column: 1 / span 2; /* makes the element to span two grid spaces */
+  border-radius: 25px;
+  place-content: unset; /* removes the previous alignment setting */
+  align-items: center;
+  padding-left: 2rem;
+}
