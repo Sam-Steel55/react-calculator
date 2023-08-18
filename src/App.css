@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
   -webkit-user-drag: none;
   -webkit-app-region: none;
 }
@@ -13,13 +12,13 @@ body {
   display: grid;
   place-content: center;
   font-family: 'Noto Sans', sans-serif;
-  height: 100vh;
+  height: 90vh;
   font-size: 2rem;
 }
 
 .container {
-   height: 80vh;
-   width: 54vh;
+   height: 70vh;
+   width: 45vh;
    background-color: black;
    border-radius: 1rem;
    padding: 1rem;
@@ -45,7 +44,8 @@ body {
   font-size: 4rem;
   overflow: hidden;
   border: 1px solid grey; 
-  border-radius: 10px; 
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -88,3 +88,4 @@ body {
   align-items: center;
   padding-left: 2rem;
 }
+
